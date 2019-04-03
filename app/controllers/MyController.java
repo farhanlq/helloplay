@@ -26,9 +26,9 @@ public class MyController extends Controller {
 		}
 
 		if (temp == reverse)
-			return ok(temp + " is a Palindrome Number ");
+			return ok(temp + " is a Palindrome Number!!! ");
 		else
-			return ok(temp + " is not a Palindrome Number ");
+			return ok(temp + " is not a Palindrome Number!!! ");
 
 	}
 }
