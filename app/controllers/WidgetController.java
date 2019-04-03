@@ -35,7 +35,8 @@ public class WidgetController extends Controller {
         this.widgets = com.google.common.collect.Lists.newArrayList(
                 new Widget("Dell Wireless Mouse", 350,2013),
                 new Widget("HP Moniter", 12000,2016),
-                new Widget("Sandisk Pendrive", 800,2019)
+                new Widget("Sandisk Pendrive", 800,2019),
+                new Widget("HP Card Reader",100,2017)
         );
     }
 

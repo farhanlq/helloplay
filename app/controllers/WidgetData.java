@@ -17,7 +17,6 @@ public class WidgetData {
     @Constraints.Min(0)
     private int price;
 
-    @Constraints.MinLength(4)
     private int year;
     
     public WidgetData() {
