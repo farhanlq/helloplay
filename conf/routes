@@ -6,7 +6,22 @@
 
 
 GET     /								controllers.MyController.index
-GET		/palindrome 								controllers.MyController.views
+GET		/palindrome 					controllers.MyController.views
+GET 	/result 						controllers.MyController.result(number:Integer)
 
 
-GET 	/result 						controllers.MyController.result
+GET 	/insert							controllers.QueueController.insertviews
+GET 	/insertQueue					controllers.QueueController.insertQueue(number:Integer)
+GET 	/showQueue						controllers.QueueController.showQueue
+
+
+GET		/delete							controllers.QueueController.deletetviews
+GET		/deleteQueue 					controllers.QueueController.deleteQueue
+
+
+GET 	/armstrong						controllers.ArmstrongController.views
+GET		/armstrongResult				controllers.ArmstrongController.armstrongResult(number:Integer)
+
+
+GET 	/employee						controllers.CouchBaseController.views
+GET		/employeeInfo					controllers.CouchBaseController.employeeInfo(id:String)

@@ -14,3 +14,5 @@ javacOptions ++= Seq(
   "-Xlint:unchecked",
   "-Xlint:deprecation"
 ) 
+
+libraryDependencies += "com.couchbase.client" % "java-client" % "2.7.0"

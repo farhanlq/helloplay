@@ -13,9 +13,7 @@ public class MyController extends Controller {
 		return ok(views.html.palindrome.render());
 	}
 
-	public Result result() {
-		String request = request().getQueryString("Number");
-		int number = Integer.parseInt(request);
+	public Result result(Integer number) {
 		int temp = number;
 		int reverse = 0, rem;
 		while (number != 0) {
@@ -26,9 +24,9 @@ public class MyController extends Controller {
 		}
 
 		if (temp == reverse)
-			return ok(temp + " is a Palindrome Number!!! ");
+			return ok(temp + " is a Palindrome Number. ");
 		else
-			return ok(temp + " is not a Palindrome Number!!! ");
+			return ok(temp + " is not a Palindrome Number. ");
 
 	}
 }
