@@ -38,6 +38,7 @@ public class CouchBaseController extends Controller {
 		JsonDocument response = bucket.upsert(doc);
 		
 		
+		
 		return ok(/*doc.content().toString()*/"Data is successfully Inserted.");
 	}
 
